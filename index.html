@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bangladesh.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40e8ac52ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="STYLE/style.css">
+    <title>Bangladesh Times</title>
+</head>
+<body>
+    
+<header class="container">
+<!-- <<<<<nav bar>>>>> -->
+<nav class="navbar navbar-expand-lg mb-4 mt-2 bg1">
+  
+  <div class="container-fluid">
+        
+        <a class="navbar-brand nav-bar-text-color1" href="#"><span id="title">Bangladesh</span>   Times</a>
+        <a class="align-by-css nav-link active nav-bar-text-color1" aria-current="page" href="#">Breaking News</a>
+
+        <a class="nav-link nav-bar-text-color2 blog" href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+  </div>
+</nav>
+
+<!-- <<<<<Spinner>>>>> -->
+<section id="spinner" class="mb-3 d-none">
+    <div class="progress" style="height: 3px;">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+</section>
+
+<!-- <<<<<Categories>>>>> -->
+<section class="section_filter">
+    <ul id="category-container" class="category_names1">
+        <li id="filter_home" class="filter_home">Home</li>
+    </ul>
+    
+</section>
+</header>
+
+<!-- <<<<<NewsFound>>>>> -->
+<main class="container mb-5">
+<div id="news-item" class="news-item-count p-1"></div>
+
+<!-- <<<<<NewsFeed>>>>> -->
+<section class="mt-5" >
+ <div id="news-container" class="row gx-5 gy-5">
+
+ </div>
+</section>
+
+<section>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="newsDetailModal" tabindex="-1" aria-labelledby="newsDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsDetailModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="news-details" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+
+
+
+    <script src="JS/index.js"></script>
+    <script src="JS/filter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
