@@ -1,3 +1,4 @@
+
 const loadCategories = async () =>{
     try{
         const response = await fetch("https://openapi.programming-hero.com/api/news/categories");
@@ -11,6 +12,8 @@ const loadCategories = async () =>{
     }
 }
 
+
+// <<<<< set categories list >>>>>
 const setNewsCategory = async () =>{
     const data = await loadCategories();
     const data1 = data.data.news_category;
@@ -26,12 +29,6 @@ const setNewsCategory = async () =>{
     }
     //console.log(categoryContainer);
 }
-
-
-
-
-
-
 
 
 
@@ -169,6 +166,7 @@ const showNewsdetails = async(_id) =>{
 setNewsCategory();
 
 
+// <<<<for home category>>>>
 document.getElementById('filter_home').addEventListener('click', function(){
     const spinner = document.getElementById('spinner');
     spinner.classList.remove("d-none");
